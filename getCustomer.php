@@ -5,7 +5,13 @@
         die("databases query failed.");
     }
 while ($row = mysqli_fetch_assoc($result)) {
-    echo $row["customerID"] . ' ' . $row["firstname"] . $row["lastname"] . $row["city"] . $row["phonenumber"] . $row["agentID"];
+    echo $row["customerID"];
+    echo $row["firstname"];
+    echo $row["lastname"];
+    echo $row["city"];
+    echo $row["phonenumber"];
+    echo $row["agentID"];
+    "\n";
 }  
     mysqli_free_result($result);
 ?>
