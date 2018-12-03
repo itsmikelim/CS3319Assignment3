@@ -1,7 +1,7 @@
 <?php
 $dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "mikelim";
+$dbpass = "root";
 $dbname = "lreid2assign2db";
 $connection = mysqli_connecct($dbhost, $dbuser, $dbpass, $dbname);
 if (mysqli_connect_errno()) {
