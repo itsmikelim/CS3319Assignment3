@@ -16,7 +16,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo $row["phonenumber"];
     echo " | ";
     echo $row["agentID"];
-    echo '\r\n';
+    echo "<br>";
 }  
     mysqli_free_result($result);
 ?>
