@@ -11,6 +11,7 @@
 
 <h1>Customers</h1>
 Select your customer:
+<br>
 
 
 <?php
