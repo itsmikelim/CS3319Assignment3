@@ -5,10 +5,7 @@
         die("databases query failed.");
     }
 while ($row = mysqli_fetch_assoc($result)) {
-    echo "<option value=";
-    echo $row["customerID"].">";
-    echo $row["firstname"];
-    echo "</option>";
+    echo $row["customerID"] . ' ' . $row["firstname"] . $row["lastname"] . $row["city"] . $row["phonenumber"] . $row["agentID"];
 }  
     mysqli_free_result($result);
 ?>
