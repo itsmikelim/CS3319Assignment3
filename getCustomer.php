@@ -6,7 +6,7 @@
     }
 while ($row = mysqli_fetch_assoc($result)) {
     echo $row["customerID"];
-    echo ": ";
+    echo " ";
     echo $row["firstname"];
     echo " ";
     echo $row["lastname"];
@@ -16,7 +16,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo $row["phonenumber"];
     echo " | ";
     echo $row["agentID"];
-    echo "\n";
+    echo '\r\n';
 }  
     mysqli_free_result($result);
 ?>
