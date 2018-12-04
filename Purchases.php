@@ -2,20 +2,20 @@
     $whichCus = $_POST["pickacustomer"];
     $whichDesc = $_POST["pickadescriptor"];
     $whichOrder = $_POST["pickanorder"];
-    if ($whichDesc = 2) {
-        if ($whichOrder = 2) {
+    if ($whichDesc = "2") {
+        if ($whichOrder = "2") {
             $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID, purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = ' . $whichCus . ') ORDER BY product.description ASC;";
         }
-        if($whichOrder = 3) {
+        if($whichOrder = "3") {
             $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID, purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = ' . $whichCus . ') ORDER BY product.description DESC;";
         }
     }
 
-    if ($whichDesc = 3) {
-        if ($whichOrder = 2) {
+    if ($whichDesc = "3") {
+        if ($whichOrder = "2") {
             $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID, purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = ' . $whichCus . ') ORDER BY product.cost ASC;";
         }
-        if($whichOrder = 3) {
+        if($whichOrder = "3") {
             $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID, purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = ' . $whichCus . ') ORDER BY product.cost DESC;";
         }
     }
