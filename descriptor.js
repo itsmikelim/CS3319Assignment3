@@ -5,9 +5,9 @@ window.onload = function() {
 function prepareListener() {
     var droppy;
     droppy = document.getElementById("pickadescriptor");
-    droppy.addEventListener("change",description)
+    droppy.addEventListener("change",Purchases)
 }
 
-function description() {
+function Purchases() {
     this.form.submit();
 }
