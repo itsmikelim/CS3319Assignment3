@@ -1,6 +1,6 @@
 <?php
     $whichCus = $_POST["pickacustomer"];
-    $query = "SELECT * FROM purchases WHERE cusID = ". $whichCus .";";
+    $query = "SELECT * FROM purchases WHERE cusID = " . $whichCus . ";";
     $result = mysqli_query($connection,$query);
     if (!result) {
         die("databases query on purchases failed.");
