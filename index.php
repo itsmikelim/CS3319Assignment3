@@ -12,6 +12,20 @@
 
 <h1>Customers</h1>
 
+
+
+Select your customer:
+<br>
+<form action="" method="post">
+<select name="pickacustomer" id="pickacustomer">
+    <option value="1">Select Here</option>
+
+<?php
+    include "getCustomer.php";
+?>
+</select>
+</form>
+
 Select the order of purchase information:
 <br>
 <form action="" method="post">
@@ -29,20 +43,6 @@ Select the order of purchase information:
     <option value="3">Descending</option>
 </select>
 </form>
-
-Select your customer:
-<br>
-<form action="" method="post">
-<select name="pickacustomer" id="pickacustomer">
-    <option value="1">Select Here</option>
-
-<?php
-    include "getCustomer.php";
-?>
-</select>
-</form>
-
-
 
 <hr>
 
