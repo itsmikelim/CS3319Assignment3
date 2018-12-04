@@ -42,6 +42,7 @@
         echo "Product Price: ";
         echo $row["product.cost"];
         echo "<br>";
+        echo "<br>";
     }  
     mysqli_free_result($result);
 ?>
