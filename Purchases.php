@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>assignment3</title>
-</head>
-<body>
-
-<?php
-    include "connecttodb.php";
-?>
-
-<h1>Purchases:</h1>
-<br>
-
 <?php
     $query = "SELECT * FROM purchases;";
     $result = mysqli_query($connection,$query);
@@ -31,5 +17,3 @@ while ($row = mysqli_fetch_assoc($result)) {
 }  
     mysqli_free_result($result);
 ?>
-</body>
-</html>

@@ -4,10 +4,10 @@
     if (!result) {
         die("databases query failed.");
     }
+    
 while ($row = mysqli_fetch_assoc($result)) {
-    echo '<a href="http://cs3319.gaul.csd.uwo.ca/vm113/assignment3/CS3319Assignment3/Purchases.php">Click here to view purchases</a>';
-    echo $row["cusID"];
-    echo " ";
+    echo "<option value='";
+    echo $row["cusID"]."'>";
     echo $row["firstname"];
     echo " ";
     echo $row["lastname"];
@@ -17,7 +17,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo $row["phonenumber"];
     echo " | ";
     echo $row["agentID"];
-    echo "<br>";
+    echo "</option>";
 }  
     mysqli_free_result($result);
 ?>
