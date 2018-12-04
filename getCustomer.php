@@ -5,7 +5,7 @@
         die("databases query failed.");
     }
 while ($row = mysqli_fetch_assoc($result)) {
-    echo '<a href="https://http://cs3319.gaul.csd.uwo.ca/vm113/assignment3/CS3319Assignment3/Purchases.php">Click here to view purchases</a>';
+    echo '<a href="http://cs3319.gaul.csd.uwo.ca/vm113/assignment3/CS3319Assignment3/Purchases.php">Click here to view purchases</a>';
     echo $row["cusID"];
     echo " ";
     echo $row["firstname"];
