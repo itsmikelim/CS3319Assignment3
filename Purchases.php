@@ -20,7 +20,7 @@
         }
     }
     
-    $query = "SELECT * FROM purchasesView WHERE purchases.cusID = " . $whichCus . ";";
+
     $result = mysqli_query($connection,$query);
     if (!result) {
         die("databases query on purchases failed.");
