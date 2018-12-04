@@ -31,19 +31,19 @@
     }
     while ($row = mysqli_fetch_assoc($result)) {
         echo "Customer ID: ";
-        echo $row["cusID"];
+        echo $row["purchases.cusID"];
         echo "<br>";
         echo "Product ID: ";
-        echo $row["prodID"];
+        echo $row["product.prodID"];
         echo "<br>";
         echo "Quantity: ";
-        echo $row["Quantity"];
+        echo $row["purchases.Quantity"];
         echo "<br>";
         echo "Product Description: ";
-        echo $row["description"];
+        echo $row["product.description"];
         echo "<br>";
         echo "Product Price: ";
-        echo $row["cost"];
+        echo $row["product.cost"];
         echo "<br>";
         echo "<br>";
     }  
