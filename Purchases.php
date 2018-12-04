@@ -30,7 +30,6 @@
 
     $result = mysqli_query($connection,$query);
     echo $query;
-    echo $result;
     echo $whichCus;
     echo $whichDesc;
     echo $whichOrder;
