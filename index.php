@@ -26,6 +26,7 @@ Select your customer:
 <script src="customer.js"></script>
 <?php 
 $whichCus = $_POST["pickacustomer"];
+echo $whichCus;
 ?>
 
 Select the order of purchase information:
@@ -40,7 +41,9 @@ Select the order of purchase information:
 <script src="descriptor.js"></script>
 <?php
 $whichDesc = $_POST["pickadescriptor"];
+echo $whichDesc;
 ?>
+
 
 <form action="" method="post">
 <select name="pickanorder" id="pickanorder">
@@ -52,6 +55,7 @@ $whichDesc = $_POST["pickadescriptor"];
 <script src="order.js"></script>
 <?php
 $whichOrder = $_POST["pickanorder"];
+echo $whichOrderder
 ?>
 
 <hr>
