@@ -49,24 +49,16 @@ Select the order of purchase information:
 
 <?php
     if (isset ($_POST['pickacustomer'])) {
-        include "connecttodb.php";
-        include "Purchases.php";
+        if (isset ($_POST['pickanorder'])) {
+            if (isset ($_POST['pickadescriptor'])) {
+                include "connecttodb.php";
+                include "Purchases.php";
+            }
+        }
     }
 ?>
 
-<?php
-    if (isset ($_POST['pickadescriptor'])) {
-        include "connecttodb.php";
-        include "Purchases.php";
-    }
-?>
 
-<?php
-    if (isset ($_POST['pickanorder'])) {
-        include "connecttodb.php";
-        include "Purchases.php";
-    }
-?>
 
 <hr>
 </body>
