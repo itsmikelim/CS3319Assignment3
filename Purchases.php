@@ -12,7 +12,6 @@
 <h1>Purchases:</h1>
 <br>
 
-customerID = cusID;
 <?php
     $query = "SELECT * FROM purchases;";
     $result = mysqli_query($connection,$query);
