@@ -52,8 +52,6 @@ Select the order of purchase information:
                 include "Purchases.php";
 ?>
 
-
-
 <hr>
 </body>
 </html>
