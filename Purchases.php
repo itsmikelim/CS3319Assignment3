@@ -17,6 +17,6 @@
         echo "Quantity: ";
         echo $row["Quantity"];
         echo "<br>";
-}  
+    }  
     mysqli_free_result($result);
 ?>
