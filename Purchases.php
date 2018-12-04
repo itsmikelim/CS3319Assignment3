@@ -4,20 +4,24 @@
     $whichOrder = $_POST["pickanorder"];
     if ($whichDesc = 2) {
         if ($whichOrder = 2) {
-            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (purchases.cusID = " . $whichCus . ") AND (product.prodID = purchases.prodID) ORDER BY product.description ASC;";
+            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = " . $whichCus . ") ORDER BY product.description ASC;";
         }
         if($whichOrder = 3) {
-            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (purchases.cusID = " . $whichCus . ") AND (product.prodID = purchases.prodID) ORDER BY product.description DESC;";
+            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = " . $whichCus . ") ORDER BY product.description DESC;";
         }
     }
 
     if ($whichDesc = 3) {
         if ($whichOrder = 2) {
-            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (purchases.cusID = " . $whichCus . ") AND (product.prodID = purchases.prodID) ORDER BY product.cost ASC;";
+            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = " . $whichCus . ") ORDER BY product.cost ASC;";
         }
         if($whichOrder = 3) {
-            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (purchases.cusID = " . $whichCus . ") AND (product.prodID = purchases.prodID) ORDER BY product.cost DESC;";
+            $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = " . $whichCus . ") ORDER BY product.cost DESC;";
         }
+    }
+
+    else {
+        $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID,  purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = " . $whichCus . ") ORDER BY product.description ASC;";
     }
     
 
