@@ -1,7 +1,7 @@
 <?php
-    $whichCus = $_POST["pickacustomer"];
-    $whichDesc = $_POST["pickadescriptor"];
-    $whichOrder = $_POST["pickanorder"];
+    
+    
+    
     echo $whichCus;
     echo $whichDesc;
     echo $whichOrder;
