@@ -3,9 +3,9 @@ window.onload = function() {
 }
 
 function prepareListener3() {
-    var droppy;
-    droppy = document.getElementById("pickanorder");
-    droppy.addEventListener("change",Purchases3)
+    var droppy3;
+    droppy3 = document.getElementById("pickanorder");
+    droppy3.addEventListener("change",Purchases3)
 }
 
 function Purchases3() {
