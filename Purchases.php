@@ -1,23 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assignment3</title>
+</head>
+<body>
+
 <?php
-    $query = "SELECT * FROM customer;";
+    include "connecttodb.php";
+?>
+
+<h1>Purchases:</h1>
+<br>
+
+customerID = cusID;
+<?php
+    $query = "SELECT * FROM purchases WHERE cusID = customerID;";
     $result = mysqli_query($connection,$query);
     if (!result) {
         die("databases query failed.");
     }
 while ($row = mysqli_fetch_assoc($result)) {
-    echo '<a href="https://coursehero.com/main.php">Click here to view purchases</a>';
+    echo "Customer ID: ";
     echo $row["cusID"];
-    echo " ";
-    echo $row["firstname"];
-    echo " ";
-    echo $row["lastname"];
-    echo ": ";
-    echo $row["city"];
-    echo " | ";
-    echo $row["phonenumber"];
-    echo " | ";
-    echo $row["agentID"];
+    echo "<br>";
+    echo "Product ID: ";
+    echo $row["prodID"];
+    echo "<br>";
+    echo "Quantity: ";
+    echo $row["Quantity"];
     echo "<br>";
 }  
     mysqli_free_result($result);
 ?>
+</body>
+</html>
