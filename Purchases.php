@@ -28,6 +28,9 @@
     $result = mysqli_query($connection,$query);
     echo $query;
     echo $result;
+    echo $whichCus;
+    echo $whichDesc;
+    echo $whichOrder;
     if (!$result) {
         die("databases query on purchases failed.");
     }
