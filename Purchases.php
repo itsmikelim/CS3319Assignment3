@@ -29,6 +29,7 @@
     if (!$result) {
         die("databases query on purchases failed.");
     }
+    echo "Hello";
     while ($row = mysqli_fetch_assoc($result)) {
         echo "Customer ID: ";
         echo $row["purchases.cusID"];
