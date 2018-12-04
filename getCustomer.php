@@ -6,7 +6,7 @@
     }
 while ($row = mysqli_fetch_assoc($result)) {
     echo '<a href="https://coursehero.com/main.php">Click here to view purchases</a>';
-    echo $row["customerID"];
+    echo $row["cusID"];
     echo " ";
     echo $row["firstname"];
     echo " ";
