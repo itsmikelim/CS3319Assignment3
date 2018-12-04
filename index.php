@@ -25,11 +25,6 @@ Select your customer:
 
 Select the order of purchase information:
 <br>
-
-<?php
-    include "connecttodb.php";
-?>
-
 <form action="" method="post">
 <select name="pickadescriptor" id="pickadescriptor">
     <option value="1">Select Here</option>
@@ -37,10 +32,6 @@ Select the order of purchase information:
     <option value="3">By Price</option>
 </select>
 </form>
-
-<?php
-    include "connecttodb.php";
-?>
 
 <form action="" method="post">
 <select name="pickanorder" id="pickanorder">
