@@ -23,7 +23,7 @@ Select your customer:
 </form>
 <hr>
 <?php
-    if(isset ($_POST['pickacustomer'])) {
+    if (isset ($_POST['pickacustomer'])) {
         include "connecttodb.php";
         include "Purchases.php";
     }
