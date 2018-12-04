@@ -5,6 +5,8 @@
 </head>
 <body>
 
+<script src="customer.js"></script>
+
 <?php
     include "connecttodb.php";
 ?>
@@ -22,7 +24,7 @@ Select your customer:
 </select>
 </form>
 <hr>
-<script src="customer.js"></script>
+
 <?php
     if (isset ($_POST['pickacustomer'])) {
         include "connecttodb.php";
