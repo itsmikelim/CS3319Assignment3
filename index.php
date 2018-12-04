@@ -48,11 +48,13 @@ Select the order of purchase information:
 <script src="order.js"></script>
 
 <?php
-
+    $whichCus = $_POST["pickacustomer"];
+    $whichDesc = $_POST["pickadescriptor"];
+    $whichOrder = $_POST["pickanorder"];
                 include "connecttodb.php";
                 include "Purchases.php";
-
 ?>
+
 
 
 <hr>
