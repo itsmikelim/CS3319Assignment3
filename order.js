@@ -1,13 +1,13 @@
 window.onload = function() {
-    prepareListener();
+    prepareListener3();
 }
 
-function prepareListener() {
+function prepareListener3() {
     var droppy;
     droppy = document.getElementById("pickanorder");
-    droppy.addEventListener("change",Purchases)
+    droppy.addEventListener("change",Purchases3)
 }
 
-function Purchases() {
+function Purchases3() {
     this.form.submit();
 }

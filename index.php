@@ -42,9 +42,9 @@ Select the order of purchase information:
 </form>
 
 <hr>
-<script src="descriptor.js"></script>
-<script src="customer.js"></script>
 
+<script src="customer.js"></script>
+<script src="descriptor.js"></script>
 <script src="order.js"></script>
 
 <?php
