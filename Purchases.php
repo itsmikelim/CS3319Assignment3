@@ -26,7 +26,7 @@
     
 
     $result = mysqli_query($connection,$query);
-    if (!$result) {
+    if (!result) {
         die("databases query on purchases failed.");
     }
     echo "Hello";
