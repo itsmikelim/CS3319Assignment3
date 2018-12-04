@@ -48,7 +48,6 @@ Select the order of purchase information:
 <script src="order.js"></script>
 
 <?php
-                include "connecttodb.php";
                 include "Purchases.php";
 ?>
 
