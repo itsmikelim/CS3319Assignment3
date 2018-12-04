@@ -7,7 +7,6 @@
     }
     echo "<ul>";
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "<li>" . $row["cusID"] . $row["Quantity"] . " BY" . $row["prodID"] . "</li>";
         echo "Customer ID: ";
         echo $row["cusID"];
         echo "<br>";
