@@ -31,6 +31,7 @@
     }
     echo "Hello";
     while ($row = mysqli_fetch_assoc($result)) {
+        echo "Hello2";
         echo "Customer ID: ";
         echo $row["purchases.cusID"];
         echo "<br>";
