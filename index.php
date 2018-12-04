@@ -22,12 +22,15 @@ Select your customer:
 </select>
 </form>
 <hr>
+<script src="customer.js"></script>
 <?php
     if (isset ($_POST['pickacustomer'])) {
         include "connecttodb.php";
         include "Purchases.php";
     }
 ?>
+
+
 <hr>
 </body>
 </html>
