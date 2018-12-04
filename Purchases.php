@@ -27,7 +27,6 @@
 
     $result = mysqli_query($connection,$query);
     echo $query;
-    echo $connection;
     echo $result;
     if (!$result) {
         die("databases query on purchases failed.");
