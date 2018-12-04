@@ -27,9 +27,6 @@
     }
     echo "<ul>";
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "Customer ID: ";
-        echo $row["cusID"];
-        echo "<br>";
         echo "Product ID: ";
         echo $row["prodID"];
         echo "<br>";
