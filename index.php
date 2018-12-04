@@ -13,7 +13,8 @@
 <h1>Customers</h1>
 Select your customer:
 <br>
-<select name="pickacustomer">
+<form action="" method="post">
+<select name="pickacustomer" id="pickacustomer">
     <option value="1">Select Here</option>
 
 <?php
@@ -24,15 +25,16 @@ Select your customer:
 
 Select the order of purchase information:
 <br>
-<select name="pickadescriptor">
+<form action="" method="post">
+<select name="pickadescriptor" id="pickadescriptor">
     <option value="1">Select Here</option>
     <option value="2">By Description</option>
     <option value="3">By Price</option>
 </select>
 </form>
 
-
-<select name="pickanorder">
+<form action="" method="post">
+<select name="pickanorder" id="pickanorder">
     <option value="1">Select Here</option>
     <option value="2">Ascending</option>
     <option value="3">Descending</option>
@@ -55,7 +57,6 @@ Select the order of purchase information:
         }
     }
 ?>
-
 
 
 <hr>
