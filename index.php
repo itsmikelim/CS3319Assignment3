@@ -11,6 +11,25 @@
 ?>
 
 <h1>Customers</h1>
+
+Select the order of purchase information:
+<br>
+<form action="" method="post">
+<select name="pickadescriptor" id="pickadescriptor">
+    <option value="1">Select Here</option>
+    <option value="2">By Description</option>
+    <option value="3">By Price</option>
+</select>
+</form>
+
+<form action="" method="post">
+<select name="pickanorder" id="pickanorder">
+    <option value="1">Select Here</option>
+    <option value="2">Ascending</option>
+    <option value="3">Descending</option>
+</select>
+</form>
+
 Select your customer:
 <br>
 <form action="" method="post">
@@ -43,9 +62,10 @@ Select the order of purchase information:
 
 <hr>
 
-<script src="customer.js"></script>
 <script src="descriptor.js"></script>
 <script src="order.js"></script>
+<script src="customer.js"></script>
+
 
 <?php
                 include "connecttodb.php";
