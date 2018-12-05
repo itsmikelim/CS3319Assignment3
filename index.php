@@ -40,8 +40,8 @@ Select the order of purchase information:
 </form>
 <script src="descriptor.js"></script>
 <?php
-$whichDesc = $_POST["pickadescriptor"];
-echo $whichDesc;
+// $whichDesc = $_POST["pickadescriptor"];
+// echo $whichDesc;
 ?>
 
 
@@ -54,8 +54,8 @@ echo $whichDesc;
 </form>
 <script src="order.js"></script>
 <?php
-$whichOrder = $_POST["pickanorder"];
-echo $whichOrderder
+// $whichOrder = $_POST["pickanorder"];
+// echo $whichOrderder
 ?>
 
 <hr>
