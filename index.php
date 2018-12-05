@@ -25,7 +25,7 @@ Select your customer:
 </form>
 <script src="customer.js"></script>
 <?php 
-$whichCus = $_POST["pickacustomer"];
+
 echo $whichCus;
 ?>
 <!--
