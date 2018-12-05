@@ -24,10 +24,7 @@ Select your customer:
 </select>
 </form>
 <script src="customer.js"></script>
-<?php 
 
-echo $whichCus;
-?>
 <!--
 Select the order of purchase information:
 <br>
