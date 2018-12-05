@@ -28,7 +28,7 @@ Select your customer:
 $whichCus = $_POST["pickacustomer"];
 echo $whichCus;
 ?>
-
+<!--
 Select the order of purchase information:
 <br>
 <form action="" method="post">
@@ -59,7 +59,7 @@ echo $whichOrderder
 ?>
 
 <hr>
-
+-->
 
 
 
