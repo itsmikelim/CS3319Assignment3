@@ -62,6 +62,8 @@ Select the order of purchase information:
     include "Purchases.php";
 ?>
 
+<br>
+<br>
 Insert a new purchase:
 <form action="newPurchase.php" method="post">
 Customer ID: <input type="text" name="cusIDForNewPurchase"><br>
