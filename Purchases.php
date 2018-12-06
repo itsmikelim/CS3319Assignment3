@@ -34,12 +34,12 @@
     // echo $whichCus;
     // echo $whichDesc;
     // echo $whichOrder;
+    echo $result;
     if (!$result) {
         die("databases query on purchases failed.");
     }
-    echo "Hello";
+
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "Hello2";
         echo "Customer ID: ";
         echo $row["cusID"];
         echo "<br>";
