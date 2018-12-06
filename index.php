@@ -71,6 +71,21 @@ Product ID: <input type="text" name="prodIDForNewPurchase"><br>
 Quantity: <input type="text" name="quantityForNewPurchase"><br>
 <input type="submit">
 </form>
+<br>
+<br>
+
+Insert a new customer:
+<form action="newCustomer.php" method="post">
+Customer ID: <input type="text" name="cusIDForNewCustomer"><br>
+First Name: <input type="text" name="firstNameForNewCustomer"><br>
+Last Name: <input type="text" name="lastNameForNewCustomer"><br>
+City: <input type="text" name="cityForNewCustomer"><br>
+Phone Number: <input type="text" name="phoneNumberForNewCustomer"><br>
+Agent ID: <input type="text" name="agentIDForNewCustomer"><br>
+<input type="submit">
+</form>
+<br>
+<br>
 
 <hr>
 </body>
