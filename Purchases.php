@@ -30,11 +30,6 @@
     $query = "SELECT * FROM purchases WHERE cusID = " . $whichCus . ";";
 
     $result = mysqli_query($connection,$query);
-    // echo $query;
-    // echo $whichCus;
-    // echo $whichDesc;
-    // echo $whichOrder;
-    echo $result;
     if (!$result) {
         die("databases query on purchases failed.");
     }
