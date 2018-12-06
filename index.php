@@ -92,12 +92,12 @@ Update a current customer's phone number:
 Customer ID: <input type="text" name="cusIDForUpdateCustomer"><br>
 <input type="submit">
 </form>
-<br>
 
 <form action="updateCustomerPhone2.php" method="post">
 New Phone Number: <input type="text" name="newPhoneNumber"><br>
 <input type="submit">
 </form>
+<br>
 <br>
 
 Delete a current customer:
@@ -106,7 +106,20 @@ Customer ID: <input type="text" name="cusIDForDeletion"><br>
 <input type="submit">
 </form>
 <br>
+<br>
 
+List all customers that have purchased at least this many of one product:
+<form action="boughtQuantity.php" method="post">
+Quantity: <input type="text" name="boughtQuantity"><br>
+<input type="submit">
+</form>
+<br>
+<br>
+
+All the products that have never been purchased:
+<?php
+    include "productsNotPurchased.php"
+?>
 
 
 <hr>
