@@ -28,7 +28,9 @@
     // }
     $query = "SELECT * FROM purchases WHERE cusID = " . $whichCus . ";";
 
+    $result = mysqli_query($connection,$query);
 
+    if ($result != false) {
     while ($row = mysqli_fetch_assoc($result)) {
         echo "Customer ID: ";
         echo $row["cusID"];
@@ -39,6 +41,7 @@
         echo "Quantity: ";
         echo $row["Quantity"];
         echo "<br>";
-    }  
+    } 
+} 
     mysqli_free_result($result);
 ?>
