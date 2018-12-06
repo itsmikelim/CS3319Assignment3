@@ -29,6 +29,11 @@
     
     $query = "SELECT * FROM purchases WHERE cusID = " . $whichCus . ";";
 
+    $result = mysqli_query($connection,$query);
+    if (!$result) {
+        die("databases query on purchases failed.");
+    }
+
     while ($row = mysqli_fetch_assoc($result)) {
         echo "Customer ID: ";
         echo $row["cusID"];
