@@ -57,14 +57,18 @@ Select the order of purchase information:
 
 <hr>
 -->
-
-
-
-
 <?php
-                include "connecttodb.php";
-                include "Purchases.php";
+    include "connecttodb.php";
+    include "Purchases.php";
 ?>
+
+Insert a new purchase:
+<form action="newPurchase.php" method="post">
+Customer ID: <input type="text" name="cusIDForNewPurchase"><br>
+Product ID: <input type="text" name="prodIDForNewPurchase"><br>
+Quantity: <input type="text" name="quantityForNewPurchase"><br>
+<input type="submit">
+</form>
 
 <hr>
 </body>
