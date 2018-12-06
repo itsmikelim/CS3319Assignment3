@@ -54,9 +54,9 @@ Select the order of purchase information:
 // $whichOrder = $_POST["pickanorder"];
 // echo $whichOrderder
 ?>
-
 <hr>
 -->
+
 <?php
     include "connecttodb.php";
     include "Purchases.php";
