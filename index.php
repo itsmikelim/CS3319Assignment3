@@ -116,10 +116,13 @@ Quantity: <input type="text" name="boughtQuantity"><br>
 <br>
 <br>
 
-All the products that have never been purchased:
+All the products that have never been purchased: 
+<br>
 <?php
     include "productsNotPurchased.php"
 ?>
+
+
 
 
 <hr>
