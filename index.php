@@ -87,6 +87,21 @@ Agent ID: <input type="text" name="agentIDForNewCustomer"><br>
 <br>
 <br>
 
+Update a current customer:
+<form action="updateCustomerPhone.php" method="post">
+Customer ID: <input type="text" name="cusIDForUpdateCustomer"><br>
+<input type="submit">
+</form>
+<br>
+
+<form action="updateCustomerPhone2.php" method="post">
+New Phone Number: <input type="text" name="newPhoneNumber"><br>
+<input type="submit">
+</form>
+<br>
+
+<form action="updateCustomer2.php" method="post"
+
 <hr>
 </body>
 </html>
