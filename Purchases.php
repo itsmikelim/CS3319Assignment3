@@ -27,7 +27,7 @@
     //     $query = "SELECT product.description, product.cost, purchases.cusID, purchases.prodID, purchases.Quantity FROM product, purchases WHERE (product.prodID = purchases.prodID) AND (purchases.cusID = " . $whichCus . ") ORDER BY product.description ASC;";
     // }
     
-    $query = "SELECT * FROM customers WHERE cusID = " . $whichCus . ";";
+    $query = "SELECT * FROM purchases WHERE cusID = " . $whichCus . ";";
 
     $result = mysqli_query($connection,$query);
     // echo $query;
@@ -41,20 +41,13 @@
     while ($row = mysqli_fetch_assoc($result)) {
         echo "Hello2";
         echo "Customer ID: ";
-        echo $row["purchases.cusID"];
+        echo $row["cusID"];
         echo "<br>";
         echo "Product ID: ";
-        echo $row["product.prodID"];
+        echo $row["prodID"];
         echo "<br>";
         echo "Quantity: ";
-        echo $row["purchases.Quantity"];
-        echo "<br>";
-        echo "Product Description: ";
-        echo $row["product.description"];
-        echo "<br>";
-        echo "Product Price: ";
-        echo $row["product.cost"];
-        echo "<br>";
+        echo $row["Quantity"];
         echo "<br>";
     }  
     mysqli_free_result($result);
