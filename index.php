@@ -87,7 +87,7 @@ Agent ID: <input type="text" name="agentIDForNewCustomer"><br>
 <br>
 <br>
 
-Update a current customer:
+Update a current customer's phone number:
 <form action="updateCustomerPhone.php" method="post">
 Customer ID: <input type="text" name="cusIDForUpdateCustomer"><br>
 <input type="submit">
@@ -100,7 +100,14 @@ New Phone Number: <input type="text" name="newPhoneNumber"><br>
 </form>
 <br>
 
-<form action="updateCustomer2.php" method="post"
+Delete a current customer:
+<form action="deleteCurrentCustomer.php" method="post">
+Customer ID: <input type="text" name="cusIDForDeletion"><br>
+<input type="submit">
+</form>
+<br>
+
+
 
 <hr>
 </body>
