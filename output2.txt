@@ -1,5 +1,4 @@
 Warning: Using a password on the command line interface can be insecure.
-ERROR 2 (HY000) at line 6: File 'datafilefall2018.txt' not found (Errcode: 2 - No such file or directory)
 --------------
 LOAD DATA LOCAL INFILE 'datafilefall2018.txt' INTO TABLE product FIELDS TERMINATED BY ','
 --------------
@@ -47,9 +46,6 @@ INSERT INTO customer VALUES ('21','Homer','Simpson','Springfield','686-8956','99
 
 Query OK, 7 rows affected (0.02 sec)
 Records: 7  Duplicates: 0  Warnings: 0
-
-ERROR 1452 (23000) at line 37: Cannot add or update a child row: a foreign key constraint fails (`lreid2assign2db`.`purchases`, CONSTRAINT `purchases_ibfk_1` FOREIGN KEY (`prodID`) REFERENCES `product` (`prodID`))
-ERROR 1452 (23000) at line 38: Cannot add or update a child row: a foreign key constraint fails (`lreid2assign2db`.`purchases`, CONSTRAINT `purchases_ibfk_1` FOREIGN KEY (`prodID`) REFERENCES `product` (`prodID`))
 --------------
 INSERT INTO purchases VALUES ('21', '99', 20)
 --------------
@@ -64,9 +60,6 @@ INSERT INTO purchases VALUES ('21', '66', 10)
 
 Query OK, 1 row affected (0.01 sec)
 
-ERROR 1452 (23000) at line 40: Cannot add or update a child row: a foreign key constraint fails (`lreid2assign2db`.`purchases`, CONSTRAINT `purchases_ibfk_1` FOREIGN KEY (`prodID`) REFERENCES `product` (`prodID`))
-ERROR 1452 (23000) at line 41: Cannot add or update a child row: a foreign key constraint fails (`lreid2assign2db`.`purchases`, CONSTRAINT `purchases_ibfk_1` FOREIGN KEY (`prodID`) REFERENCES `product` (`prodID`))
-ERROR 1452 (23000) at line 42: Cannot add or update a child row: a foreign key constraint fails (`lreid2assign2db`.`purchases`, CONSTRAINT `purchases_ibfk_1` FOREIGN KEY (`prodID`) REFERENCES `product` (`prodID`))
 --------------
 INSERT INTO purchases VALUES ('31', '99', 1)
 --------------
@@ -91,7 +84,6 @@ INSERT INTO purchases VALUES ('15', '66', 2)
 
 Query OK, 1 row affected (0.21 sec)
 
-ERROR 1452 (23000) at line 45: Cannot add or update a child row: a foreign key constraint fails (`lreid2assign2db`.`purchases`, CONSTRAINT `purchases_ibfk_1` FOREIGN KEY (`prodID`) REFERENCES `product` (`prodID`))
 --------------
 INSERT INTO purchases VALUES ('15', '78', 2)
 --------------
